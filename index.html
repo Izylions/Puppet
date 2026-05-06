@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZYLIONS — Performance & Story</title>
+    <!-- Fonts for the Puppet-style look -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Design Branch -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation (Pasted here for GitHub Pages Preview) -->
+    <nav id="navbar">
+        <div class="logo">IZYLIONS<span>.</span></div>
+        <div class="nav-links">
+            <a href="#story">Our Story</a>
+            <a href="#products">Shop</a>
+            <a href="#" onclick="toggleCart()">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Puppet-style bold layout) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">BUILT FOR<br>THE BOLD.</h1>
+            <p>Athletic wear engineered in Kuala Lumpur.</p>
+            <a href="#products" class="btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story-block">
+        <div class="container">
+            <div class="section-eyebrow">The Philosophy</div>
+            <h2 class="section-title">Performance is a tool.<br>Style is the outcome.</h2>
+            <p class="section-sub">Izylions combines high-end moisture-wicking technology with a minimalist aesthetic designed for the urban athlete.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="products">
+        <div class="products-grid" id="products-grid">
+            <!-- JS will inject products here -->
+        </div>
+    </section>
+
+    <!-- Toast Notifications -->
+    <div id="toast"></div>
+
+    <!-- Logic Branch -->
+    <script src="js/app.js"></script>
+</body>
+</html>
