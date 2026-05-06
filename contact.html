@@ -1,0 +1,75 @@
+/* hero.css */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--nav-h) clamp(1rem, 4vw, 2.5rem) clamp(3rem, 6vw, 5rem);
+  overflow: hidden;
+  background: var(--clr-bg);
+}
+
+/* Abstract background texture */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(232, 213, 176, 0.04) 0%, transparent 50%);
+  z-index: 0;
+}
+
+/* Large decorative text behind */
+.hero::after {
+  content: 'SS25';
+  position: absolute;
+  right: -0.1em;
+  bottom: -0.15em;
+  font-family: var(--font-display);
+  font-size: clamp(12rem, 28vw, 26rem);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(232, 213, 176, 0.06);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--clr-accent-hot);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out) 0.2s forwards;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 16vw, 14rem);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  color: var(--clr-text);
+  opacity: 0;
+  animation: fadeUp 1s var(--ease-out) 0.4s forwards;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

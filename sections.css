@@ -1,0 +1,104 @@
+# YOUR STORE — Clothing Brand Website
+
+A minimal, dark, editorial clothing store website. Built with pure HTML, CSS, and vanilla JavaScript — no frameworks, no build step needed.
+
+---
+
+## 📁 Project Structure
+
+```
+clothing-store/
+├── index.html              ← Homepage
+├── pages/
+│   ├── shop.html           ← Shop / Product Listing
+│   ├── lookbook.html       ← Lookbook / Editorial
+│   ├── about.html          ← About page
+│   └── contact.html        ← Contact form
+├── css/
+│   ├── reset.css           ← Browser normalization
+│   ├── variables.css       ← Design tokens (colors, fonts, spacing)
+│   ├── main.css            ← Base styles, buttons, utilities
+│   ├── navbar.css          ← Navigation bar
+│   ├── hero.css            ← Homepage hero section
+│   ├── sections.css        ← Banner cards, ticker, products, about blurb
+│   ├── footer.css          ← Footer
+│   └── responsive.css      ← Mobile / tablet breakpoints
+├── js/
+│   └── main.js             ← Scroll effects, mobile nav, reveal animations
+└── assets/
+    └── images/             ← Drop your product/lookbook images here
+```
+
+---
+
+## 🎨 Customizing the Design
+
+### Change Colors / Fonts
+Edit **`css/variables.css`** — all design tokens live here. Change `--clr-accent`, `--clr-bg`, fonts, etc. and it updates the whole site automatically.
+
+### Change Brand Name
+Search and replace `YOUR STORE` across all HTML files.
+
+### Add Product Images
+Replace the placeholder `<div class="placeholder-img">` blocks with:
+```html
+<img src="../assets/images/your-product.jpg" alt="Product Name" />
+```
+
+---
+
+## 🚀 Deployment
+
+### GitHub Pages (Free)
+1. Push this repo to GitHub
+2. Go to **Settings → Pages**
+3. Set source to `main` branch, root folder
+4. Your site is live at `https://yourusername.github.io/clothing-store`
+
+### Custom Domain (Web Hosting)
+Upload all files to your hosting's `public_html` folder via FTP or cPanel file manager.
+
+### Recommended Hosts for Malaysia
+- **Exabytes MY** — cheap, local support
+- **Hostinger** — affordable, fast
+- **Netlify** — free tier, drag-and-drop deploy
+
+---
+
+## 🔗 Connecting a Contact Form (No Backend)
+
+The contact form currently shows a success message client-side. To actually receive emails:
+
+1. Sign up at [Formspree.io](https://formspree.io) (free tier available)
+2. Create a form, get your endpoint URL
+3. In `pages/contact.html`, replace the JS submit handler with a fetch POST to your Formspree URL
+
+---
+
+## 🛒 Adding a Real Shop (Future)
+
+Options to add real product/cart/checkout:
+- **Snipcart** — drop-in cart, works with static HTML
+- **Shopify Buy Button** — embed Shopify into your HTML
+- **Lemon Squeezy** — good for digital + physical products
+
+---
+
+## 📝 Suggested Git Branches
+
+| Branch | Purpose |
+|--------|---------|
+| `main` | Live / production code |
+| `dev` | Active development |
+| `feature/shop-cart` | Adding cart functionality |
+| `feature/new-drop` | Uploading new product season |
+| `fix/mobile-nav` | Bug fixes |
+
+---
+
+## ✏️ Credits
+
+Design & code: [Your Name]  
+Built with: HTML, CSS, JavaScript, Google Fonts (Bebas Neue, Space Mono, DM Sans)
+
+© 2025 YOUR STORE

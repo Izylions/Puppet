@@ -1,0 +1,38 @@
+/* variables.css — design tokens. Edit here to retheme the whole site. */
+:root {
+
+  /* ── COLOURS ── */
+  --clr-bg:         #0d0d0d;      /* page background */
+  --clr-surface:    #141414;      /* cards, sections */
+  --clr-surface-2:  #1c1c1c;      /* hover states */
+  --clr-border:     #2a2a2a;      /* subtle lines */
+
+  --clr-text:       #f0ece4;      /* primary text */
+  --clr-text-muted: #7a7570;      /* secondary / labels */
+
+  --clr-accent:     #e8d5b0;      /* warm cream — main accent */
+  --clr-accent-hot: #c9a84c;      /* gold highlight */
+
+  /* ── TYPOGRAPHY ── */
+  --font-display:  'Bebas Neue', sans-serif;    /* big headings */
+  --font-mono:     'Space Mono', monospace;     /* labels, nav, UI text */
+  --font-body:     'DM Sans', sans-serif;       /* body copy */
+
+  /* ── SIZING ── */
+  --nav-h:         64px;
+  --max-w:         1280px;
+  --section-gap:   clamp(4rem, 8vw, 8rem);
+
+  /* ── MOTION ── */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.76, 0, 0.24, 1);
+  --transition:    0.3s var(--ease-out);
+
+  /* ── CARD ACCENT COLOURS (banner cards) ── */
+  --card-shop-from:    #1a1108;
+  --card-shop-to:      #2e1f00;
+  --card-look-from:    #080d14;
+  --card-look-to:      #0e1a2e;
+  --card-contact-from: #0f0f0f;
+  --card-contact-to:   #1e1414;
+}
